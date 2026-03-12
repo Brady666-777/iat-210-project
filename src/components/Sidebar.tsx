@@ -16,6 +16,8 @@ import {
   FileDown,
   ChevronDown,
   Rocket,
+  Menu,
+  X,
 } from 'lucide-react';
 
 const navItems = [
@@ -45,9 +47,40 @@ const navItems = [
 export default function Sidebar() {
   const pathname = usePathname();
   const [loreOpen, setLoreOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <aside className="fixed left-0 top-0 h-screen w-[280px] bg-[#07090f] border-r border-[#1a2040] flex flex-col z-40 overflow-y-auto">
+    <>
+      {/* Mobile hamburger button */}
+      <button
+        onClick={() => setMobileOpen(true)}
+        className="md:hidden fixed top-4 left-4 z-50 w-10 h-10 bg-[#07090f] border border-[#1a2040] rounded-lg flex items-center justify-center text-gray-300 hover:text-white transition-colors"
+        aria-label="Open menu"
+      >
+        <Menu size={20} />
+      </button>
+
+      {/* Mobile overlay */}
+      {mobileOpen && (
+        <div
+          className="md:hidden fixed inset-0 bg-black/60 z-40"
+          onClick={() => setMobileOpen(false)}
+        />
+      )}
+
+      <aside className={`fixed left-0 top-0 h-screen w-[280px] bg-[#07090f] border-r border-[#1a2040] flex flex-col z-50 overflow-y-auto transition-transform duration-300
+        md:translate-x-0
+        ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}
+      `}>
+      {/* Mobile close button */}
+      <button
+        onClick={() => setMobileOpen(false)}
+        className="md:hidden absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-gray-400 hover:text-white"
+        aria-label="Close menu"
+      >
+        <X size={18} />
+      </button>
+
       {/* Logo */}
       <div className="p-6 border-b border-[#1a2040]">
         <Link href="/" className="flex items-center gap-3 group">
@@ -98,6 +131,7 @@ export default function Sidebar() {
                       <Link
                         key={sub.href}
                         href={sub.href}
+                        onClick={() => setMobileOpen(false)}
                         className="block px-2 py-2 text-xs text-gray-500 hover:text-gray-200 transition-colors rounded"
                       >
                         {sub.label}
@@ -113,6 +147,7 @@ export default function Sidebar() {
             <Link
               key={item.href}
               href={item.href}
+              onClick={() => setMobileOpen(false)}
               className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition-all ${
                 isActive
                   ? 'bg-[#0d1530] text-white border border-[#2a3a6a]'
@@ -132,5 +167,6 @@ export default function Sidebar() {
         <p className="text-gray-700 text-xs text-center mt-0.5">SFU 2026</p>
       </div>
     </aside>
+    </>
   );
 }
