@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 3%;
+  --foreground: 210 40% 90%;
+  --card: 222 47% 5%;
+  --card-foreground: 210 40% 90%;
+  --border: 220 30% 12%;
+  --muted-foreground: 220 15% 55%;
+  --accent: 220 60% 50%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Rajdhani', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', system-ui, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
+
+/* Medieval divider style */
+.divider-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, hsl(var(--muted-foreground)), transparent);
+  margin: 2rem 0;
+}
+
+/* Orbitron sci-fi font for headings */
+.font-medieval {
+  font-family: 'Orbitron', system-ui, sans-serif;
+}
+
+/* Navigation link hover effect */
+.nav-link {
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background: rgba(106, 154, 255, 0.08);
+}
+
+.nav-link.active {
+  background: rgba(106, 154, 255, 0.12);
+  border-color: rgba(106, 154, 255, 0.3);
+}
+
+/* Faction color accents */
+.faction-turian  { --faction-color: #4a9eff; }
+.faction-asari   { --faction-color: #9b6bff; }
+.faction-krogan  { --faction-color: #ff6b35; }
+.faction-salarian{ --faction-color: #35d4a0; }
+.faction-human   { --faction-color: #ffd700; }
