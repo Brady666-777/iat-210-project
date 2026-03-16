@@ -74,6 +74,20 @@
         </div>
       </section>
 
+      {/* Trailer */}
+      <section className="mb-16 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-medieval text-white mb-8 tracking-wider text-center">Trailer</h2>
+        <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-xl border border-[#1a2040]"
+            src="https://www.youtube.com/embed/CCkbA2eXHso"
+            title="Ark Ascension Trailer"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </section>
+
       {/* Resources */}
       <section className="max-w-3xl mx-auto">
         <h2 className="text-2xl font-medieval text-white mb-8 tracking-wider text-center">Key Resources</h2>
