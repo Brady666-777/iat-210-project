@@ -1,0 +1,14 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/contributions/page": "/contributions",
+  "/file/page": "/file",
+  "/gallery/page": "/gallery",
+  "/logs/page": "/logs",
+  "/lore/page": "/lore",
+  "/mechanics/page": "/mechanics",
+  "/page": "/",
+  "/rulebook/page": "/rulebook",
+  "/sourse/page": "/sourse"
+}

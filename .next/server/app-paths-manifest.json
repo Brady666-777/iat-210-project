@@ -1,1 +1,14 @@
-{}
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/contributions/page": "app/contributions/page.js",
+  "/file/page": "app/file/page.js",
+  "/gallery/page": "app/gallery/page.js",
+  "/logs/page": "app/logs/page.js",
+  "/lore/page": "app/lore/page.js",
+  "/mechanics/page": "app/mechanics/page.js",
+  "/page": "app/page.js",
+  "/rulebook/page": "app/rulebook/page.js",
+  "/sourse/page": "app/sourse/page.js"
+}

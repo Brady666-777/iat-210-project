@@ -1,22 +1,34 @@
-﻿export default function MechanicsPage() {
+﻿import Image from 'next/image';
+import flowchartImage from '@/asset/Flowchart.png';
+
+export default function MechanicsPage() {
   return (
-    <div className="min-h-screen p-8 md:p-12">
-      <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 text-center tracking-wider">
+    <div className="animated-page-shell min-h-screen p-8 md:p-12">
+      <h1
+        className="reveal-up text-5xl md:text-6xl font-bold text-white mb-4 text-center tracking-wider"
+        style={{ ['--reveal-delay' as '--reveal-delay']: '80ms' }}
+      >
         Game Mechanics
       </h1>
-      <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+      <p
+        className="reveal-up text-center text-gray-400 mb-12 max-w-2xl mx-auto"
+        style={{ ['--reveal-delay' as '--reveal-delay']: '180ms' }}
+      >
         A deep dive into the systems, phases, and strategic decisions that power Ark Ascension.
       </p>
 
       {/* RESOURCES */}
-      <section className="max-w-4xl mx-auto mb-16">
+      <section
+        className="reveal-up max-w-4xl mx-auto mb-16"
+        style={{ ['--reveal-delay' as '--reveal-delay']: '240ms' }}
+      >
         <h2 className="text-3xl font-bold text-white mb-6 tracking-wider">Resources</h2>
         <p className="text-gray-400 mb-6 leading-relaxed">
           Three core resources drive every decision in Ark Ascension. Managing them carefully
           across Mining, Solar Sacrifice, and Ark Construction is the key to victory.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '300ms' }}>
             <div className="text-3xl mb-3">Metal</div>
             <h3 className="text-white font-bold mb-2">Metal</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -25,7 +37,7 @@
               Mined at Asteroid, Colony, and Fortress tiles.
             </p>
           </div>
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '380ms' }}>
             <div className="text-3xl mb-3">Fuel</div>
             <h3 className="text-white font-bold mb-2">Fuel</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -34,7 +46,7 @@
               extremely vulnerable. Collected at Derelict Wreck and Salarian Lab tiles.
             </p>
           </div>
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '460ms' }}>
             <div className="text-3xl mb-3">Crystals</div>
             <h3 className="text-white font-bold mb-2">Crystals</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -46,17 +58,20 @@
         </div>
       </section>
 
-      <div className="divider-line max-w-4xl mx-auto" />
+      <div className="divider-line animated-divider max-w-4xl mx-auto" />
 
       {/* TURN SEQUENCE */}
-      <section className="max-w-4xl mx-auto mb-16">
+      <section
+        className="reveal-up max-w-4xl mx-auto mb-16"
+        style={{ ['--reveal-delay' as '--reveal-delay']: '520ms' }}
+      >
         <h2 className="text-3xl font-bold text-white mb-6 tracking-wider">Turn Sequence</h2>
         <p className="text-gray-400 mb-8 leading-relaxed">
           Every round follows five strictly ordered phases. The Solar Sacrifice is resolved
           collectively before the active player takes their individual actions.
         </p>
         <div className="space-y-4">
-          <div className="flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]">
+          <div className="timeline-step reveal-scale flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '560ms' }}>
             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-purple-900 border border-purple-600 flex items-center justify-center text-white font-bold text-sm">0</div>
             <div>
               <h3 className="text-white font-bold mb-1">Start of Turn — Racial Passives</h3>
@@ -66,7 +81,7 @@
               </p>
             </div>
           </div>
-          <div className="flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]">
+          <div className="timeline-step reveal-scale flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '620ms' }}>
             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-amber-900 border border-amber-600 flex items-center justify-center text-white font-bold text-sm">1</div>
             <div>
               <h3 className="text-white font-bold mb-1">Phase 1 — Solar Sacrifice (All Players)</h3>
@@ -79,7 +94,7 @@
               </p>
             </div>
           </div>
-          <div className="flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]">
+          <div className="timeline-step reveal-scale flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '680ms' }}>
             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-900 border border-blue-600 flex items-center justify-center text-white font-bold text-sm">2</div>
             <div>
               <h3 className="text-white font-bold mb-1">Phase 2 — Movement</h3>
@@ -91,7 +106,7 @@
               </p>
             </div>
           </div>
-          <div className="flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]">
+          <div className="timeline-step reveal-scale flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '740ms' }}>
             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-900 border border-green-600 flex items-center justify-center text-white font-bold text-sm">3</div>
             <div>
               <h3 className="text-white font-bold mb-1">Phase 3 — Tile Resolution</h3>
@@ -102,7 +117,7 @@
               </p>
             </div>
           </div>
-          <div className="flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]">
+          <div className="timeline-step reveal-scale flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '800ms' }}>
             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-900 border border-red-600 flex items-center justify-center text-white font-bold text-sm">4</div>
             <div>
               <h3 className="text-white font-bold mb-1">Phase 4 — Action Phase</h3>
@@ -114,7 +129,7 @@
               </p>
             </div>
           </div>
-          <div className="flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]">
+          <div className="timeline-step reveal-scale flex gap-4 items-start bg-[#1a1a1a] rounded-xl p-5 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '860ms' }}>
             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gray-700 border border-gray-500 flex items-center justify-center text-white font-bold text-sm">5</div>
             <div>
               <h3 className="text-white font-bold mb-1">Phase 5 — End of Turn</h3>
@@ -127,10 +142,45 @@
         </div>
       </section>
 
-      <div className="divider-line max-w-4xl mx-auto" />
+      <div className="divider-line animated-divider max-w-4xl mx-auto" />
+
+      <section
+        className="reveal-up max-w-4xl mx-auto mb-16"
+        style={{ ['--reveal-delay' as '--reveal-delay']: '920ms' }}
+      >
+        <details className="chart-frame floating-card bg-[#1a1a1a] rounded-xl border border-[#2a2a2a]">
+          <summary className="list-none cursor-pointer px-4 md:px-6 py-4 md:py-5">
+            <h2 className="text-3xl font-bold text-white tracking-wider">Game Flow Chart</h2>
+            <p className="text-gray-400 mt-2 leading-relaxed">
+              Click to expand or collapse the turn flow diagram.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1BNmZshshE6YKH6XUQ62hx78awMG5SNhu/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex mt-4 px-4 py-2 bg-[#0d1530] border border-[#2a3a6a] rounded-lg text-[#6a9aff] text-sm hover:bg-[#13204a] transition-all"
+            >
+              Open Full Flowchart
+            </a>
+          </summary>
+          <div className="px-4 md:px-6 pb-4 md:pb-6 overflow-x-auto">
+            <Image
+              src={flowchartImage}
+              alt="Ark Ascension game flow chart"
+              className="min-w-[900px] w-full h-auto rounded-lg"
+              priority
+            />
+          </div>
+        </details>
+      </section>
+
+      <div className="divider-line animated-divider max-w-4xl mx-auto" />
 
       {/* BOARD TILES */}
-      <section className="max-w-4xl mx-auto mb-16">
+      <section
+        className="reveal-up max-w-4xl mx-auto mb-16"
+        style={{ ['--reveal-delay' as '--reveal-delay']: '980ms' }}
+      >
         <h2 className="text-3xl font-bold text-white mb-6 tracking-wider">Board Tiles</h2>
         <p className="text-gray-400 mb-6 leading-relaxed">
           The Galactic Central Board is a circular loop of 20 tiles. Each tile type offers a
@@ -147,28 +197,31 @@
               </tr>
             </thead>
             <tbody className="divide-y divide-[#2a2a2a]">
-              <tr className="bg-[#111]"><td className="px-4 py-3 text-gray-500 font-mono">0</td><td className="px-4 py-3 text-white font-medium">Citadel</td><td className="px-4 py-3 text-amber-400 text-xs">Start / Safe</td><td className="px-4 py-3 text-gray-400">No effect on stop. Passing through lets you discard 1 Sabotage Card for free.</td></tr>
-              <tr className="bg-[#161616]"><td className="px-4 py-3 text-gray-500 font-mono">1, 11, 16</td><td className="px-4 py-3 text-white font-medium">Asteroid / Colony / Fortress</td><td className="px-4 py-3 text-amber-400 text-xs">Metal Mine</td><td className="px-4 py-3 text-gray-400">Roll die to mine Metal. Tile 16 grants a 2x bonus.</td></tr>
-              <tr className="bg-[#111]"><td className="px-4 py-3 text-gray-500 font-mono">2, 10</td><td className="px-4 py-3 text-white font-medium">Mass Relay</td><td className="px-4 py-3 text-amber-400 text-xs">Special</td><td className="px-4 py-3 text-gray-400">Spend 1 Fuel to warp to any other Mass Relay tile (once per turn).</td></tr>
-              <tr className="bg-[#161616]"><td className="px-4 py-3 text-gray-500 font-mono">3, 9, 14</td><td className="px-4 py-3 text-white font-medium">Illium / Ruins / Temple</td><td className="px-4 py-3 text-amber-400 text-xs">Crystal Mine</td><td className="px-4 py-3 text-gray-400">Roll die to mine Crystals. Tile 14 grants a 2x bonus.</td></tr>
-              <tr className="bg-[#111]"><td className="px-4 py-3 text-gray-500 font-mono">4</td><td className="px-4 py-3 text-white font-medium">Omega Station</td><td className="px-4 py-3 text-amber-400 text-xs">Black Market</td><td className="px-4 py-3 text-gray-400">Draw 1 Sabotage Card free, or buy 1 for 1 Crystal.</td></tr>
-              <tr className="bg-[#161616]"><td className="px-4 py-3 text-gray-500 font-mono">5, 7, 12, 17</td><td className="px-4 py-3 text-white font-medium">Hazard Zones</td><td className="px-4 py-3 text-amber-400 text-xs">Danger</td><td className="px-4 py-3 text-gray-400">Draw 1 Action Card immediately and resolve its effect.</td></tr>
-              <tr className="bg-[#111]"><td className="px-4 py-3 text-gray-500 font-mono">6, 18</td><td className="px-4 py-3 text-white font-medium">Wreck / Lab</td><td className="px-4 py-3 text-amber-400 text-xs">Fuel Depot</td><td className="px-4 py-3 text-gray-400">Roll die to collect Fuel. Tile 18 grants a 2x bonus.</td></tr>
-              <tr className="bg-[#161616]"><td className="px-4 py-3 text-gray-500 font-mono">8</td><td className="px-4 py-3 text-white font-medium">Citadel Council</td><td className="px-4 py-3 text-amber-400 text-xs">Trading</td><td className="px-4 py-3 text-gray-400">Force a trade with any player. Both roll and the winner sets the terms.</td></tr>
-              <tr className="bg-[#111]"><td className="px-4 py-3 text-gray-500 font-mono">15</td><td className="px-4 py-3 text-white font-medium">Solar Observatory</td><td className="px-4 py-3 text-amber-400 text-xs">Special</td><td className="px-4 py-3 text-gray-400">Peek at the top Solar Penalty card. Choose whether to trigger it now or leave it.</td></tr>
-              <tr className="bg-[#161616]"><td className="px-4 py-3 text-gray-500 font-mono">19</td><td className="px-4 py-3 text-white font-medium">Ark Drydock</td><td className="px-4 py-3 text-amber-400 text-xs">Finish / Safe</td><td className="px-4 py-3 text-gray-400">Stop here to build 1 Ark Slot for free. Limit: once per game.</td></tr>
+              <tr className="table-row-animated bg-[#111]"><td className="px-4 py-3 text-gray-500 font-mono">0</td><td className="px-4 py-3 text-white font-medium">Citadel</td><td className="px-4 py-3 text-amber-400 text-xs">Start / Safe</td><td className="px-4 py-3 text-gray-400">No effect on stop. Passing through lets you discard 1 Sabotage Card for free.</td></tr>
+              <tr className="table-row-animated bg-[#161616]"><td className="px-4 py-3 text-gray-500 font-mono">1, 11, 16</td><td className="px-4 py-3 text-white font-medium">Asteroid / Colony / Fortress</td><td className="px-4 py-3 text-amber-400 text-xs">Metal Mine</td><td className="px-4 py-3 text-gray-400">Roll die to mine Metal. Tile 16 grants a 2x bonus.</td></tr>
+              <tr className="table-row-animated bg-[#111]"><td className="px-4 py-3 text-gray-500 font-mono">2, 10</td><td className="px-4 py-3 text-white font-medium">Mass Relay</td><td className="px-4 py-3 text-amber-400 text-xs">Special</td><td className="px-4 py-3 text-gray-400">Spend 1 Fuel to warp to any other Mass Relay tile (once per turn).</td></tr>
+              <tr className="table-row-animated bg-[#161616]"><td className="px-4 py-3 text-gray-500 font-mono">3, 9, 14</td><td className="px-4 py-3 text-white font-medium">Illium / Ruins / Temple</td><td className="px-4 py-3 text-amber-400 text-xs">Crystal Mine</td><td className="px-4 py-3 text-gray-400">Roll die to mine Crystals. Tile 14 grants a 2x bonus.</td></tr>
+              <tr className="table-row-animated bg-[#111]"><td className="px-4 py-3 text-gray-500 font-mono">4</td><td className="px-4 py-3 text-white font-medium">Omega Station</td><td className="px-4 py-3 text-amber-400 text-xs">Black Market</td><td className="px-4 py-3 text-gray-400">Draw 1 Sabotage Card free, or buy 1 for 1 Crystal.</td></tr>
+              <tr className="table-row-animated bg-[#161616]"><td className="px-4 py-3 text-gray-500 font-mono">5, 7, 12, 17</td><td className="px-4 py-3 text-white font-medium">Hazard Zones</td><td className="px-4 py-3 text-amber-400 text-xs">Danger</td><td className="px-4 py-3 text-gray-400">Draw 1 Action Card immediately and resolve its effect.</td></tr>
+              <tr className="table-row-animated bg-[#111]"><td className="px-4 py-3 text-gray-500 font-mono">6, 18</td><td className="px-4 py-3 text-white font-medium">Wreck / Lab</td><td className="px-4 py-3 text-amber-400 text-xs">Fuel Depot</td><td className="px-4 py-3 text-gray-400">Roll die to collect Fuel. Tile 18 grants a 2x bonus.</td></tr>
+              <tr className="table-row-animated bg-[#161616]"><td className="px-4 py-3 text-gray-500 font-mono">8</td><td className="px-4 py-3 text-white font-medium">Citadel Council</td><td className="px-4 py-3 text-amber-400 text-xs">Trading</td><td className="px-4 py-3 text-gray-400">Force a trade with any player. Both roll and the winner sets the terms.</td></tr>
+              <tr className="table-row-animated bg-[#111]"><td className="px-4 py-3 text-gray-500 font-mono">15</td><td className="px-4 py-3 text-white font-medium">Solar Observatory</td><td className="px-4 py-3 text-amber-400 text-xs">Special</td><td className="px-4 py-3 text-gray-400">Peek at the top Solar Penalty card. Choose whether to trigger it now or leave it.</td></tr>
+              <tr className="table-row-animated bg-[#161616]"><td className="px-4 py-3 text-gray-500 font-mono">19</td><td className="px-4 py-3 text-white font-medium">Ark Drydock</td><td className="px-4 py-3 text-amber-400 text-xs">Finish / Safe</td><td className="px-4 py-3 text-gray-400">Stop here to build 1 Ark Slot for free. Limit: once per game.</td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <div className="divider-line max-w-4xl mx-auto" />
+      <div className="divider-line animated-divider max-w-4xl mx-auto" />
 
       {/* CARD DECKS */}
-      <section className="max-w-4xl mx-auto mb-16">
+      <section
+        className="reveal-up max-w-4xl mx-auto mb-16"
+        style={{ ['--reveal-delay' as '--reveal-delay']: '1040ms' }}
+      >
         <h2 className="text-3xl font-bold text-white mb-6 tracking-wider">Card Decks</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1100ms' }}>
             <h3 className="text-white font-bold mb-1">Action Deck <span className="text-gray-500 font-normal text-sm">(30 cards)</span></h3>
             <p className="text-gray-400 text-sm mb-3">Drawn when landing on Hazard Zones. Can be positive, negative, or event-based.</p>
             <ul className="text-gray-400 text-sm space-y-1 list-disc list-inside">
@@ -179,7 +232,7 @@
               <li>Citadel Meeting - Players vote on who gets 2 free resources</li>
             </ul>
           </div>
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1160ms' }}>
             <h3 className="text-white font-bold mb-1">Sabotage Deck <span className="text-gray-500 font-normal text-sm">(20 cards)</span></h3>
             <p className="text-gray-400 text-sm mb-3">Collected at Omega Station. Played during the Action Phase to hinder opponents.</p>
             <ul className="text-gray-400 text-sm space-y-1 list-disc list-inside">
@@ -189,7 +242,7 @@
               <li>Phantom Directive - Discard 2 cards to control an opponent next move</li>
             </ul>
           </div>
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1220ms' }}>
             <h3 className="text-white font-bold mb-1">Solar Penalty Deck <span className="text-gray-500 font-normal text-sm">(10 cards)</span></h3>
             <p className="text-gray-400 text-sm mb-3">Triggered when the collective Solar Sacrifice fails. Three triggers ends the game.</p>
             <ul className="text-gray-400 text-sm space-y-1 list-disc list-inside">
@@ -201,10 +254,13 @@
         </div>
       </section>
 
-      <div className="divider-line max-w-4xl mx-auto" />
+      <div className="divider-line animated-divider max-w-4xl mx-auto" />
 
       {/* QUANTITATIVE ANALYSIS */}
-      <section className="max-w-4xl mx-auto mb-16">
+      <section
+        className="reveal-up max-w-4xl mx-auto mb-16"
+        style={{ ['--reveal-delay' as '--reveal-delay']: '1280ms' }}
+      >
         <h2 className="text-3xl font-bold text-white mb-6 tracking-wider">Quantitative Analysis</h2>
         <div className="space-y-6 text-gray-400 leading-relaxed">
           <p>
@@ -236,13 +292,16 @@
         </div>
       </section>
 
-      <div className="divider-line max-w-4xl mx-auto" />
+      <div className="divider-line animated-divider max-w-4xl mx-auto" />
 
       {/* TRADE-OFFS */}
-      <section className="max-w-4xl mx-auto mb-16">
+      <section
+        className="reveal-up max-w-4xl mx-auto mb-16"
+        style={{ ['--reveal-delay' as '--reveal-delay']: '1340ms' }}
+      >
         <h2 className="text-3xl font-bold text-white mb-6 tracking-wider">Trade-offs and Dilemmas</h2>
         <div className="space-y-4">
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1400ms' }}>
             <h3 className="text-white font-bold mb-2">Fuel Economy vs. Board Position</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Every movement costs Fuel. Spending Fuel aggressively to reach high-value tiles like the 2x Lab
@@ -250,7 +309,7 @@
               run now is worth the mobility cost later.
             </p>
           </div>
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1460ms' }}>
             <h3 className="text-white font-bold mb-2">Solar Sacrifice: Contribute or Free-Ride?</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Every round you face a silent negotiation. Paying your fair share depletes your Ark-building
@@ -259,7 +318,7 @@
               completing an Ark slot.
             </p>
           </div>
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1520ms' }}>
             <h3 className="text-white font-bold mb-2">Sabotage Timing</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Sabotage cards are precious and single-use. Playing Sabotage Protocol at the wrong time,
@@ -267,7 +326,7 @@
               it for the final few slots where rebuilding costs are heaviest maximises disruption.
             </p>
           </div>
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1580ms' }}>
             <h3 className="text-white font-bold mb-2">Mass Relay vs. Sequential Movement</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               The Mass Relay lets you warp anywhere on the board for 1 Fuel but it costs your movement
@@ -275,7 +334,7 @@
               potential resource pickups. Sometimes the slow path is richer.
             </p>
           </div>
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1640ms' }}>
             <h3 className="text-white font-bold mb-2">Race Ability: Now or Never?</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Active race abilities cost resources and can only be used once per Action Phase. Using the
@@ -286,13 +345,16 @@
         </div>
       </section>
 
-      <div className="divider-line max-w-4xl mx-auto" />
+      <div className="divider-line animated-divider max-w-4xl mx-auto" />
 
       {/* GAME DYNAMICS */}
-      <section className="max-w-4xl mx-auto mb-16">
+      <section
+        className="reveal-up max-w-4xl mx-auto mb-16"
+        style={{ ['--reveal-delay' as '--reveal-delay']: '1700ms' }}
+      >
         <h2 className="text-3xl font-bold text-white mb-6 tracking-wider">Game Dynamics</h2>
         <div className="space-y-4">
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1760ms' }}>
             <h3 className="text-white font-bold mb-2">Cooperative Tension</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               The Solar Sacrifice forces rivals to cooperate temporarily every single round. There is no
@@ -301,7 +363,7 @@
               other to Ark completion.
             </p>
           </div>
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1820ms' }}>
             <h3 className="text-white font-bold mb-2">Spatial Control</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Landing on an opponent tile costs you a resource. This discourages players from clustering
@@ -309,7 +371,7 @@
               16, 18) creates a positional advantage that others must work around or spend Sabotage Cards to disrupt.
             </p>
           </div>
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1880ms' }}>
             <h3 className="text-white font-bold mb-2">Asymmetric Faction Interplay</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Each faction wants different resources and excels at different board areas. Asari and Salarians
@@ -317,7 +379,7 @@
               creates faction-specific hotspots and encourages targeted sabotage against direct resource rivals.
             </p>
           </div>
-          <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]">
+          <div className="floating-card reveal-scale bg-[#1a1a1a] rounded-xl p-6 border border-[#2a2a2a]" style={{ ['--reveal-delay' as '--reveal-delay']: '1940ms' }}>
             <h3 className="text-white font-bold mb-2">Escalating Endgame</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               As players fill more Ark slots, the temptation to play Sabotage Cards increases dramatically.
@@ -329,10 +391,13 @@
         </div>
       </section>
 
-      <div className="divider-line max-w-4xl mx-auto" />
+      <div className="divider-line animated-divider max-w-4xl mx-auto" />
 
       {/* PLAY SESSION TIME */}
-      <section className="max-w-4xl mx-auto">
+      <section
+        className="reveal-up max-w-4xl mx-auto"
+        style={{ ['--reveal-delay' as '--reveal-delay']: '2000ms' }}
+      >
         <h2 className="text-3xl font-bold text-white mb-4 tracking-wider">Play Session Time</h2>
         <p className="text-gray-400 leading-relaxed text-center max-w-2xl mx-auto">
           Ark Ascension is designed for 2 to 5 players. A full game with experienced players runs
