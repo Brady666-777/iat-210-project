@@ -1,6 +1,20 @@
 ﻿'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
+
+import citadelMeetingCard from '@/asset/Cards/citadelmeeting.png';
+import empCard from '@/asset/Cards/emp.png';
+import engineFailureCard from '@/asset/Cards/enginefailure.png';
+import finalCountdownCard from '@/asset/Cards/finalcountdown.png';
+import hackCard from '@/asset/Cards/hack.png';
+import normandySupportCard from '@/asset/Cards/normandysupport.png';
+import phantomDirectiveCard from '@/asset/Cards/phantomdirective.png';
+import reaperScoutCard from '@/asset/Cards/reaperscout.png';
+import resourceAbundanceCard from '@/asset/Cards/resourceabundance.png';
+import sabotageProtocolCard from '@/asset/Cards/sabotageprotocol.png';
+import solarFlareCard from '@/asset/Cards/solarflare.png';
+import timeWarpCard from '@/asset/Cards/timewarp.png';
 
 const factions = [
   {
@@ -66,6 +80,36 @@ const factions = [
       { name: 'Indomitable Token', type: 'Ability Token', desc: 'Halved penalty tracker for failed Solar Sacrifices.' },
       { name: 'Alliance Will Card', type: 'Race Card', desc: 'Spend 1 any resource — trades this turn cannot be sabotaged.' },
       { name: 'Human Race Board', type: 'Race Board', desc: '10-slot Ark track: Balanced alternating resources, flexible end game.' },
+    ],
+  },
+];
+
+const cardSections = [
+  {
+    type: 'Action Cards',
+    cards: [
+      { name: 'Citadel Meeting', image: citadelMeetingCard },
+      { name: 'Engine Failure', image: engineFailureCard },
+      { name: 'Normandy Support', image: normandySupportCard },
+      { name: 'Reaper Scout', image: reaperScoutCard },
+      { name: 'Resource Abundance', image: resourceAbundanceCard },
+    ],
+  },
+  {
+    type: 'Sabotage Cards',
+    cards: [
+      { name: 'EMP', image: empCard },
+      { name: 'Hack', image: hackCard },
+      { name: 'Phantom Directive', image: phantomDirectiveCard },
+      { name: 'Sabotage Protocol', image: sabotageProtocolCard },
+    ],
+  },
+  {
+    type: 'Solar Penalty Cards',
+    cards: [
+      { name: 'Final Countdown', image: finalCountdownCard },
+      { name: 'Solar Flare', image: solarFlareCard },
+      { name: 'Time Warp', image: timeWarpCard },
     ],
   },
 ];
@@ -137,8 +181,34 @@ export default function GalleryPage() {
           </div>
         </div>
 
+        <div className="bg-[#0a0e1a] border border-[#1a2040] rounded-xl p-6 md:p-8 mb-8">
+          <h3 className="text-2xl font-medieval text-white tracking-wider mb-2 text-center">Card Collection</h3>
+          <p className="text-gray-500 text-sm text-center mb-6 italic">Latest uploaded cards from the design folder.</p>
+          <div className="space-y-8">
+            {cardSections.map(({ type, cards }) => (
+              <section key={type}>
+                <h4 className="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">{type}</h4>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                  {cards.map(({ name, image }) => (
+                    <div key={name} className="bg-[#05070f] border border-[#1a2040] rounded-xl p-3">
+                      <Image
+                        src={image}
+                        alt={name}
+                        className="w-full h-auto rounded-lg border border-[#1a2040]"
+                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                        priority={false}
+                      />
+                      <p className="text-xs text-gray-400 mt-2 text-center">{name}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        </div>
+
         <p className="text-center text-gray-600 text-sm italic">
-          Final card art and print files coming soon — placeholder layouts shown above.
+          Final card art and print files are being updated as the project progresses.
         </p>
       </div>
     </div>

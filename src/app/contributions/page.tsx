@@ -1,20 +1,20 @@
 ﻿const contributors = [
   {
-    name: 'Nima',
-    overall: '25%',
-    roles: ['Flowchart Designer', 'Quantitative Analyst'],
+    name: 'Nima Salehirad',
+    overall: '20%',
+    roles: ['Flowchart Designer', 'Quantitative Analyst', 'Video Production'],
     contributions: [
       'Turn-sequence flowchart (Mermaid/graph TD)',
       'Quantitative analysis of game balance',
       'Free-rider dynamics & Solar Sacrifice probability',
-      'Faction playstyle breakdowns',
+      'Video trailer production support',
     ],
     color: '#4a9eff',
     icon: '📊',
   },
   {
-    name: 'Evan',
-    overall: '25%',
+    name: 'Evan Wang',
+    overall: '20%',
     roles: ['Playtesting Lead', 'Game Description Writer'],
     contributions: [
       'Playtesting log (5-round simulation)',
@@ -26,21 +26,34 @@
     icon: '🧪',
   },
   {
-    name: 'Brady Wu',
-    overall: '25%',
-    roles: ['Playtesting Co-Lead', 'Narrative Designer', 'Game Description Writer'],
+    name: 'Ruiyang Wu',
+    overall: '20%',
+    roles: ['Website Creator'],
     contributions: [
-      'Playtesting log (5-round simulation)',
-      'Thematic backstory & narrative ("The sun is dying…")',
-      'Game description — tone and scenario framing',
-      'Faction lore writing',
+      'Website creation and implementation',
+      'Built and maintained project pages in Next.js',
+      'Structured site navigation and content sections',
+      'Updated web content and layout during development',
     ],
     color: '#9b6bff',
-    icon: '✍️',
+    icon: '💻',
   },
   {
-    name: 'Amirkia',
-    overall: '25%',
+    name: 'Christopher Piek',
+    overall: '20%',
+    roles: ['Card Creator', 'Trailer Producer'],
+    contributions: [
+      'Card creation and design work',
+      'Video trailer production',
+      'Visual content support for presentation materials',
+      'Helped shape card visuals to match game theme',
+    ],
+    color: '#eab308',
+    icon: '🎬',
+  },
+  {
+    name: 'Amirkia Safari',
+    overall: '20%',
     roles: ['Rulebook Author', 'Visual Gallery Curator', 'Trailer Producer'],
     contributions: [
       'Complete rulebook (Setup, Race Boards, Turn Sequence, Win Condition)',
@@ -61,7 +74,7 @@ export default function ContributionsPage() {
           Contributions
         </h1>
         <p className="text-gray-500 text-lg italic max-w-2xl mx-auto">
-          Ark Ascension was built by a team of four — each bringing unique skills to bring this board game to life.
+          Ark Ascension was built by a team of five — each bringing unique skills to bring this board game to life.
         </p>
       </section>
 

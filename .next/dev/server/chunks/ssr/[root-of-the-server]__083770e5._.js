@@ -20,24 +20,25 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const contributors = [
     {
-        name: 'Nima',
-        overall: '25%',
+        name: 'Nima Salehirad',
+        overall: '20%',
         roles: [
             'Flowchart Designer',
-            'Quantitative Analyst'
+            'Quantitative Analyst',
+            'Video Production'
         ],
         contributions: [
             'Turn-sequence flowchart (Mermaid/graph TD)',
             'Quantitative analysis of game balance',
             'Free-rider dynamics & Solar Sacrifice probability',
-            'Faction playstyle breakdowns'
+            'Video trailer production support'
         ],
         color: '#4a9eff',
         icon: '📊'
     },
     {
-        name: 'Evan',
-        overall: '25%',
+        name: 'Evan Wang',
+        overall: '20%',
         roles: [
             'Playtesting Lead',
             'Game Description Writer'
@@ -52,25 +53,39 @@ const contributors = [
         icon: '🧪'
     },
     {
-        name: 'Brady Wu',
-        overall: '25%',
+        name: 'Ruiyang Wu',
+        overall: '20%',
         roles: [
-            'Playtesting Co-Lead',
-            'Narrative Designer',
-            'Game Description Writer'
+            'Website Creator'
         ],
         contributions: [
-            'Playtesting log (5-round simulation)',
-            'Thematic backstory & narrative ("The sun is dying…")',
-            'Game description — tone and scenario framing',
-            'Faction lore writing'
+            'Website creation and implementation',
+            'Built and maintained project pages in Next.js',
+            'Structured site navigation and content sections',
+            'Updated web content and layout during development'
         ],
         color: '#9b6bff',
-        icon: '✍️'
+        icon: '💻'
     },
     {
-        name: 'Amirkia',
-        overall: '25%',
+        name: 'Christopher Piek',
+        overall: '20%',
+        roles: [
+            'Card Creator',
+            'Trailer Producer'
+        ],
+        contributions: [
+            'Card creation and design work',
+            'Video trailer production',
+            'Visual content support for presentation materials',
+            'Helped shape card visuals to match game theme'
+        ],
+        color: '#eab308',
+        icon: '🎬'
+    },
+    {
+        name: 'Amirkia Safari',
+        overall: '20%',
         roles: [
             'Rulebook Author',
             'Visual Gallery Curator',
@@ -98,21 +113,21 @@ function ContributionsPage() {
                         children: "Contributions"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contributions/page.tsx",
-                        lineNumber: 60,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-gray-500 text-lg italic max-w-2xl mx-auto",
-                        children: "Ark Ascension was built by a team of four — each bringing unique skills to bring this board game to life."
+                        children: "Ark Ascension was built by a team of five — each bringing unique skills to bring this board game to life."
                     }, void 0, false, {
                         fileName: "[project]/src/app/contributions/page.tsx",
-                        lineNumber: 63,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/contributions/page.tsx",
-                lineNumber: 59,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -135,7 +150,7 @@ function ContributionsPage() {
                                         children: icon
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/contributions/page.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 92,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -145,7 +160,7 @@ function ContributionsPage() {
                                                 children: name
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contributions/page.tsx",
-                                                lineNumber: 81,
+                                                lineNumber: 94,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -159,18 +174,18 @@ function ContributionsPage() {
                                                         children: role
                                                     }, role, false, {
                                                         fileName: "[project]/src/app/contributions/page.tsx",
-                                                        lineNumber: 84,
+                                                        lineNumber: 97,
                                                         columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contributions/page.tsx",
-                                                lineNumber: 82,
+                                                lineNumber: 95,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/contributions/page.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 93,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -184,7 +199,7 @@ function ContributionsPage() {
                                                 children: overall
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contributions/page.tsx",
-                                                lineNumber: 95,
+                                                lineNumber: 108,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -192,19 +207,19 @@ function ContributionsPage() {
                                                 children: "contribution"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contributions/page.tsx",
-                                                lineNumber: 96,
+                                                lineNumber: 109,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/contributions/page.tsx",
-                                        lineNumber: 94,
+                                        lineNumber: 107,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/contributions/page.tsx",
-                                lineNumber: 75,
+                                lineNumber: 88,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -215,7 +230,7 @@ function ContributionsPage() {
                                         children: "Deliverables"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/contributions/page.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 113,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -230,42 +245,42 @@ function ContributionsPage() {
                                                         children: "▸"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contributions/page.tsx",
-                                                        lineNumber: 104,
+                                                        lineNumber: 117,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: item
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/contributions/page.tsx",
-                                                        lineNumber: 105,
+                                                        lineNumber: 118,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, item, true, {
                                                 fileName: "[project]/src/app/contributions/page.tsx",
-                                                lineNumber: 103,
+                                                lineNumber: 116,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/contributions/page.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 114,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/contributions/page.tsx",
-                                lineNumber: 99,
+                                lineNumber: 112,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, name, true, {
                         fileName: "[project]/src/app/contributions/page.tsx",
-                        lineNumber: 70,
+                        lineNumber: 83,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/contributions/page.tsx",
-                lineNumber: 68,
+                lineNumber: 81,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -276,7 +291,7 @@ function ContributionsPage() {
                         children: "IAT 201 — Interactive Arts & Technology · Simon Fraser University · 2026"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contributions/page.tsx",
-                        lineNumber: 115,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -284,19 +299,19 @@ function ContributionsPage() {
                         children: "Each team member contributed equally across research, design, and production phases."
                     }, void 0, false, {
                         fileName: "[project]/src/app/contributions/page.tsx",
-                        lineNumber: 118,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/contributions/page.tsx",
-                lineNumber: 114,
+                lineNumber: 127,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/contributions/page.tsx",
-        lineNumber: 58,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 }
